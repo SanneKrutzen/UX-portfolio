@@ -1,0 +1,309 @@
+* {
+	margin:0;
+	padding:0;
+}
+
+@font-face {
+  font-family: Scala;
+  src: url(../font/Scala_39567.woff);
+}
+
+::-webkit-scrollbar { 
+    visibility: none; 
+}
+
+body {
+	position: relative;
+	background-color: #000;
+	height: 835vh;
+	width: 100vw;
+	font-family: Scala;
+	overflow-x: hidden;
+}
+
+#linkButton {
+	opacity: 0;
+	padding: 19px 63px;
+	background-color: #11141C;
+	text-decoration: none;
+	right: 15vw;
+	bottom: 15vh;
+	position: absolute;
+	color: #3A445C;
+}
+#linkButton:hover {
+	background-color: #3A445C;
+	color: white;
+
+}
+/*								Particles 				-------------------*/
+canvas {
+  display: block;
+  vertical-align: top;
+
+} /* ---- particles.js container ---- */
+
+#particles-js {
+  position: absolute;
+  width: 100vw;
+  height: 150vh;
+  background-color: #000000;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+
+#textZoom {
+	height: 100vh;
+	width: 100vw;
+	position: relative;
+}
+
+#textZoom p {
+	position: absolute;
+	line-height: 1.5em;
+	
+}
+#textZoom span {
+	display: block;
+	width: 100vw;
+	text-align: center;
+	padding-top: 20vh;
+}
+#first{
+	opacity: 1;
+}
+#p1 {
+	font-size: 0px;
+	opacity: 0;
+	left: 25%;
+/*	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+*/}
+#p2 {
+	font-size: 0px;
+	opacity: 0;
+	left: 55%;
+	top: 50%;
+}
+#p3 {
+	font-size: 0px;
+	opacity: 0;
+	left: 30%;
+}
+#p4 {
+	font-size: 0px;
+	opacity: 0;
+	left: 65%;
+	bottom: 75%;
+/*	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+*/}
+#p5 {
+	font-size: 0px;
+	opacity: 0;
+	right: 50%;
+	top: 60%;
+}
+#p6 {
+	font-size: 0px;
+	opacity: 0;
+	-webkit-transformOrigin: translate(-50% -50%);
+	-ms-transformOrigin: translate(-50% -50%);
+	transformOrigin: translate(-50% -50%);
+	left: 50%;
+	top: 50%;
+}
+#textZoom p, #textZoom span {
+	color: #5E6F9A;
+}
+
+/*								imgContent section		-------------------*/
+
+.container {
+	height: 100vh;
+	position: relative;
+}
+
+.c5 {
+	margin-top: 6.25vh;
+}
+
+.c4{
+	margin-top: 17.5vh;
+}
+
+.c3{
+	margin-top: 13.75vh;
+}
+
+.c2{
+	margin-top: 0.625vh;
+}
+
+.c1{
+	margin-top: -3.125vh;
+}
+
+.imgcontent img{
+	position: absolute;
+}
+.zes {
+	margin-top: 12.5vh;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+	height: 75vh;
+}
+
+.vijf {
+	margin-top: 1.25vh;
+/*	margin-left: 18.75vw;
+*/	right:0;
+	height: 97.5vh;
+}
+
+.vier {
+	margin-top: 1.25vh;
+	height: 97.5vh;
+}
+
+.drie {
+	height: 90vh;
+	margin-top: 5vh;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+.twee {
+	height: 71.25vh;
+	margin-top: 14.375vh;
+/*	margin-left: 40.625vw;
+*/	right:0;
+}
+.een {
+	height: 82.5vh;
+	margin-top: 8.75vh;
+}
+
+
+
+/*								Landingswindow			-------------------*/
+svg {
+	height: 85vh;
+	width: auto;
+	bottom: 2vh;
+	position: absolute;
+	display: block;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+	
+}
+
+#NL {
+	animation: grow 1.5s 5s forwards;
+	transform-origin: 50% 50%;
+	opacity: 0;
+}
+
+#ZH {
+	animation: grow 1s 6s forwards;
+	opacity: 0;
+}
+
+#NH, #BRA, #U {
+	animation: grow 1s 6.7s forwards;
+	opacity: 0;
+}
+
+#FLEVO, #GEL, #LIM {
+	animation: grow 1s 7.5s forwards;
+	opacity: 0;
+}
+
+#NLBG {
+	animation: grow .5s 8s forwards;
+	opacity: 0;
+}
+
+
+@keyframes grow {
+	from {
+		opacity: 0;
+		transform: scale(0.98);
+	}
+	to { 
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+
+
+.typing{
+	position: absolute;
+	width: 700px;
+	height: 100px;
+	color: #3A445C;
+	margin-left: 160px;
+	bottom: 550px;	
+	font-size: 2.5em;
+}
+
+.animation-icon {
+	color: white;
+	position: absolute;
+	width: 140px;
+	right: 110px;
+	bottom: 565px;
+	opacity: 0;
+	animation: fadeInLow .4s 8s forwards;
+}
+.text-scroll-up {
+	width: 140px;
+	text-align: center;
+	color: #3A445C; 
+	margin-top: -132px;
+}
+@keyframes fadeInLow {
+	0% {opacity: 0}
+	100% {opacity: 1}
+}
+.upsidedown {
+	transform: rotate(180deg) scale(.25,.25);
+	margin-left: -80px;
+}
+.up2 {
+	margin-top: -350px;
+}
+
+.link {
+	position: absolute;
+	right:0;
+	bottom: 0;
+	height: 100px;
+	width: 240px;
+	background-color: #11141C;
+	animation: fadeIn 2s 1 forwards;
+}
+.credits {
+	position: absolute;
+	text-decoration: none;
+	padding-top: 20px;
+	padding-left: 30px;
+	color: #3A445C; 
+	font-size: 1.3em;
+}
+
+@keyframes fadeIn {
+	0% {opacity:0}
+	100% {opacity:1}
+}

@@ -1,0 +1,29 @@
+*{
+	margin:0;
+	padding:0;
+}
+img {
+	width: 100%;
+}
+
+a {
+	padding: 19px 63px;
+	background-color: #df5b57;
+	text-decoration: none;
+	margin-left: 15vw;
+	top: -150px;
+	position: relative;
+}
+
+a:hover {
+	background-color: #000;
+}
+span {
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	font-weight: 800;
+	vertical-align: middle;
+	color: white;
+	text-decoration: none;
+	height: 54px;
+}
